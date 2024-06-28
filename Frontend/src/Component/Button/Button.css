@@ -1,0 +1,57 @@
+.Button {
+  padding: var(--padding_1020);
+  display: block;
+  text-align: center;
+  color: var(--text_colour_black);
+  letter-spacing: 1px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  cursor: pointer;
+  font-size: var(--btn_font_size);
+  border-radius: var(--border_radius_6);
+  font-weight: var(--font_weight_semibold);
+}
+.Button:hover {
+  color: var(--colour_primary_dark);
+}
+.Button.outline {
+  background-color: transparent;
+  border: 2px solid var(--text_colour_dkgray);
+  color: var(--text_colour_dkgray);
+}
+.Button.outline:hover {
+  color: var(--text_colour_dkgray);
+  border: 2px solid var(--colour_primary_dark);
+}
+.Button.Full {
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+.Button.Fill {
+  background-color: var(--colour_primary_light);
+  border: 2px solid var(--colour_primary);
+  font-weight: var(--font_weight_bold);
+  max-width: 100%;
+}
+.Button.Fill:hover {
+  background-color: var(--colour_primary_dark);
+  border: 2px solid var(--colour_primary_dark);
+  color: var(--text_colour_white);
+}
+.Button.NoOutline {
+  border: none;
+}
+.Button.NoOutline:hover {
+  border: none;
+}
+.Button.Primary {
+  background-color: var(--colour_primary_dark);
+  border: 2px solid var(--colour_primary_dark);
+  color: var(--text_colour_white);
+}
+.Button.Secondary {
+  background-color: var(--colour_primary_light);
+}
+.Button.Secondary:hover {
+  color: var(--colour_primary_dark);
+}/*# sourceMappingURL=Button.css.map */

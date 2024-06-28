@@ -1,0 +1,45 @@
+#FAQ {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+#FAQ .Container.FAQ {
+  margin-top: 50px;
+}
+#FAQ .Container.FAQ .FAQCard .Question-Container {
+  padding: var(--padding_10);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--text_colour_white);
+  border-radius: var(--border_radius_6);
+  cursor: pointer;
+}
+#FAQ .Container.FAQ .FAQCard .Question-Container .Image-Container {
+  aspect-ratio: 1/1;
+  background-color: var(--colour_primary_light);
+  border-radius: var(--border_radius_6);
+  display: grid;
+  place-items: center;
+  width: 50px;
+}
+#FAQ .Container.FAQ .FAQCard .Question-Container .Question {
+  color: var(--text_colour_dkgray);
+  font-size: var(--font_size_20);
+  padding-right: 20px;
+}
+#FAQ .Container.FAQ .FAQCard .Question-Container:hover {
+  border: 2px solid var(--bg_colour_lgray);
+}
+#FAQ .Container.FAQ .FAQCard .Question-Container:hover .Question {
+  color: var(--colour_primary_dark);
+}
+#FAQ .Container.FAQ .FAQCard .Answer-Container {
+  border: 2px solid var(--text_colour_white);
+  border-radius: var(--border_radius_6);
+  padding: var(--padding_20);
+  margin: 5px;
+}
+#FAQ .Container.FAQ .FAQCard .Answer-Container p {
+  font-size: var(--font_size_18);
+}/*# sourceMappingURL=FAQ.css.map */

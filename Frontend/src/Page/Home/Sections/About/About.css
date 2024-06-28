@@ -1,0 +1,85 @@
+#About .Container .Section-Container {
+  margin-top: 100px;
+}
+#About .Container .Section-Container #AboutSection {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+#About .Container .Section-Container #AboutSection:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#About .Container .Section-Container #AboutSection:nth-child(even) .illustration {
+  justify-content: flex-end;
+}
+#About .Container .Section-Container #AboutSection:nth-child(even) .Section-Details {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+#About .Container .Section-Container #AboutSection .illustration {
+  display: flex;
+  width: clamp(300px, 100%, 500px);
+}
+#About .Container .Section-Container #AboutSection .illustration img {
+  width: clamp(300px, 100%, 400px);
+}
+#About .Container .Section-Container #AboutSection .Section-Details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: clamp(300px, 100%, 600px);
+  padding-left: 20px;
+}
+#About .Container .Section-Container #AboutSection .Section-Details .Title h1 {
+  font-size: var(--font_size_32);
+  color: var(--colour_primary_dark);
+  letter-spacing: 1px;
+  font-family: var(--font_family_title);
+}
+#About .Container .Section-Container #AboutSection .Section-Details .Details {
+  margin-top: 20px;
+}
+#About .Container .Section-Container #AboutSection .Section-Details .Details p {
+  font-size: var(--font_size_20);
+  color: var(--text_colour_dkgray);
+}
+#About .Container .Section-Container #AboutSection .Section-Details .learn-more {
+  margin-top: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#About .Container .Section-Container #AboutSection .Section-Details .learn-more a {
+  color: var(--text_colour_black);
+  font-size: var(--font_size_18);
+}
+#About .Container .Section-Container #AboutSection .Section-Details .learn-more a span {
+  color: var(--colour_primary_dark);
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #About .Container .Section-Container #AboutSection {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+  }
+  #About .Container .Section-Container #AboutSection:nth-child(even) .illustration {
+    justify-content: center;
+  }
+  #About .Container .Section-Container #AboutSection:nth-child(even) .Section-Details {
+    padding: 0px 20px;
+  }
+  #About .Container .Section-Container #AboutSection .illustration {
+    justify-content: center;
+  }
+  #About .Container .Section-Container #AboutSection .illustration img {
+    max-width: 280px;
+  }
+  #About .Container .Section-Container #AboutSection .Section-Details {
+    padding: 0px 20px;
+  }
+  #About .Container .Section-Container #AboutSection .Section-Details .learn-more {
+    width: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=About.css.map */

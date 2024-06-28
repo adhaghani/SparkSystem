@@ -1,0 +1,47 @@
+#FAQ {
+  padding-top: 80px;
+  padding-bottom: 200px;
+  .Container.FAQ {
+    margin-top: 50px;
+    .FAQCard {
+      .Question-Container {
+        padding: var(--padding_10);
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid var(--text_colour_white);
+        border-radius: var(--border_radius_6);
+        cursor: pointer;
+        .Image-Container {
+          aspect-ratio: 1/1;
+          background-color: var(--colour_primary_light);
+          border-radius: var(--border_radius_6);
+          display: grid;
+          place-items: center;
+          width: 50px;
+        }
+        .Question {
+          color: var(--text_colour_dkgray);
+          font-size: var(--font_size_20);
+          padding-right: 20px;
+        }
+        &:hover {
+          border: 2px solid var(--bg_colour_lgray);
+          .Question {
+            color: var(--colour_primary_dark);
+          }
+        }
+      }
+      .Answer-Container {
+        border: 2px solid var(--text_colour_white);
+        border-radius: var(--border_radius_6);
+        padding: var(--padding_20);
+        margin: 5px;
+        p {
+          font-size: var(--font_size_18);
+        }
+      }
+    }
+  }
+}

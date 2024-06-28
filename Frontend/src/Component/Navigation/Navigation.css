@@ -1,0 +1,123 @@
+#Navigation {
+  width: 100%;
+  height: var(--height_nav);
+  background-color: var(--colour_primary_light);
+  position: fixed;
+}
+#Navigation .Container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Navigation .Container .Section {
+  display: flex;
+  align-items: center;
+  gap: var(--gap_15);
+  padding: 0px;
+}
+#Navigation .Container .Section .Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#Navigation .Container .Section .Logo img {
+  width: 40px;
+}
+#Navigation .Container .Section .Logo h3 {
+  letter-spacing: 1px;
+}
+#Navigation .Container .Section .List {
+  display: flex;
+}
+#Navigation .Container .Section .List li a {
+  display: block;
+  padding: var(--padding_1020);
+  color: var(--text_colour_dkgray);
+}
+#Navigation .Container .Section .List li a:hover {
+  color: var(--colour_primary_dark);
+}
+#Navigation .Container .Section.Hamburger {
+  display: none;
+}
+#Navigation .Container .Section.Hamburger .Hamburger {
+  width: 45px;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: var(--border_radius_6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+#Navigation .Container .Section.Hamburger .Hamburger div {
+  width: 30px;
+  height: 5px;
+  background-color: var(--bg_colour_black);
+  margin: 3px auto;
+  border-radius: 4px;
+}
+#Navigation .Container .Section.Hamburger .Hamburger.Active div.Top {
+  transform: rotate(45deg) translateX(8px) translateY(8px);
+}
+#Navigation .Container .Section.Hamburger .Hamburger.Active div.Mid {
+  width: 0;
+  opacity: 0;
+}
+#Navigation .Container .Section.Hamburger .Hamburger.Active div.Bot {
+  transform: rotate(-45deg) translateX(8px) translateY(-8px);
+}
+#Navigation #SideNav {
+  display: none;
+  position: fixed;
+  top: var(--height_nav);
+  right: 0;
+  height: calc(100% - var(--height_nav));
+  background-color: var(--colour_primary_light);
+  transform: translateX(100%);
+  width: 100%;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+#Navigation #SideNav.Active {
+  transform: translateX(0px);
+}
+#Navigation #SideNav .Section .List li a {
+  text-align: center;
+  display: block;
+  padding: 30px 10px;
+  color: var(--text_colour_dkgray);
+}
+#Navigation #SideNav .Section .List li a:hover {
+  color: var(--colour_primary_dark);
+}
+#Navigation #SideNav .Section.Button {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Navigation {
+    position: fixed;
+  }
+  #Navigation .Container .Section .List {
+    display: none;
+  }
+  #Navigation .Container .Section.Button {
+    display: none;
+  }
+  #Navigation .Container .Section.Hamburger {
+    display: block;
+  }
+  #Navigation #SideNav {
+    display: flex;
+  }
+  #Navigation #SideNav .Section.Button {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Navigation.css.map */

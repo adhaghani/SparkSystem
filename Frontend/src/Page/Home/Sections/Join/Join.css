@@ -1,0 +1,29 @@
+#Join {
+  padding: 80px 0px;
+}
+#Join .Container .join-Card {
+  background-color: var(--colour_primary_dark);
+  border-radius: var(--border_radius_6);
+  padding: 40px var(--padding_20);
+}
+#Join .Container .join-Card .Title {
+  text-align: center;
+}
+#Join .Container .join-Card .Title h2 {
+  font-family: var(--font_family_title);
+  color: var(--text_colour_white);
+  letter-spacing: 1px;
+  font-size: var(--font_size_32);
+}
+#Join .Container .join-Card .details {
+  margin-top: 20px;
+  text-align: center;
+  font-size: var(--font_size_20);
+  color: var(--colour_primary_light);
+}
+#Join .Container .join-Card .Button {
+  margin: auto;
+  width: 250px;
+  margin-top: 20px;
+  max-width: 100%;
+}/*# sourceMappingURL=Join.css.map */

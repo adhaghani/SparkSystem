@@ -1,0 +1,31 @@
+#Join {
+  padding: 80px 0px;
+  .Container {
+    .join-Card {
+      background-color: var(--colour_primary_dark);
+      border-radius: var(--border_radius_6);
+      padding: 40px var(--padding_20);
+      .Title {
+        text-align: center;
+        h2 {
+          font-family: var(--font_family_title);
+          color: var(--text_colour_white);
+          letter-spacing: 1px;
+          font-size: var(--font_size_32);
+        }
+      }
+      .details {
+        margin-top: 20px;
+        text-align: center;
+        font-size: var(--font_size_20);
+        color: var(--colour_primary_light);
+      }
+      .Button {
+        margin: auto;
+        width: 250px;
+        margin-top: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+#Review {
+  padding: 80px 0px;
+}
+#Review .Container .Section-Review {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_15);
+  flex-wrap: wrap;
+}
+#Review .Container .Section-Review #ReviewCard {
+  flex: 1 1 0;
+  border-radius: var(--border_radius_6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#Review .Container .Section-Review #ReviewCard .profile-pic {
+  border-radius: 100%;
+  border: 2px solid var(--bg_colour_lgray);
+  aspect-ratio: 1/1;
+  width: 60px;
+  display: grid;
+  place-items: center;
+}
+#Review .Container .Section-Review #ReviewCard .profile-pic img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+#Review .Container .Section-Review #ReviewCard .name {
+  margin: 10px 0px;
+}
+#Review .Container .Section-Review #ReviewCard .name h4 {
+  color: var(--text_colour_dkgray);
+}
+#Review .Container .Section-Review #ReviewCard .title p {
+  font-size: var(--font_size_14);
+  color: var(--text_colour_lgray);
+}
+#Review .Container .Section-Review #ReviewCard .review {
+  margin-top: 20px;
+}
+#Review .Container .Section-Review #ReviewCard .review p {
+  color: var(--text_colour_dkgray);
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #Review .Container .Section-Review {
+    flex-direction: column;
+  }
+  #Review .Container .Section-Review #ReviewCard {
+    width: clamp(300px, 100%, 500px);
+  }
+}/*# sourceMappingURL=Review.css.map */

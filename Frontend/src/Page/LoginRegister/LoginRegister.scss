@@ -1,0 +1,49 @@
+#LoginRegister {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: var(--padding_10);
+  .LoginRegister-Container {
+    border: 1px solid;
+    border-radius: var(--border_radius_6);
+    padding: var(--padding_20);
+    display: flex;
+    width: clamp(300px, 100%, 1000px);
+    .Details-Container {
+      aspect-ratio: 1/1;
+      background-color: var(--colour_primary_light);
+      border-radius: var(--border_radius_6);
+      width: clamp(300px, 100%, 768px);
+      padding: var(--padding_20);
+      h1 {
+        color: var(--colour_primary_dark);
+        font-size: var(--font_size_40);
+      }
+    }
+    .Form-Container {
+      width: clamp(300px, 100%, 768px);
+      padding: var(--padding_20);
+      .Form-Title {
+        margin-bottom: 10px;
+        h1 {
+          font-family: var(--font_family_title);
+          letter-spacing: 1px;
+          font-size: var(--font_size_32);
+        }
+        p {
+          font-size: var(--font_size_16);
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #LoginRegister {
+    .LoginRegister-Container {
+      flex-wrap: wrap;
+    }
+  }
+}
