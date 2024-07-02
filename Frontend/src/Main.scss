@@ -16,15 +16,22 @@
 }
 
 :root {
+  --bg_colour_lred: #ff0000;
+  --bg_colour_red: #ff0000;
   --bg_colour_white: #f7f7f7;
   --bg_colour_black: #131313;
-  --bg_colour_dkgray: #202020;
+  --bg_colour_dkgray: #6d6d6d;
   --bg_colour_lgray: #cecece;
 
   --text_colour_black: #131313;
-  --text_colour_dkgray: #303030;
+  --text_colour_dkgray: #6d6d6d;
   --text_colour_lgray: #a7a7a7;
   --text_colour_white: #f7f7f7;
+
+  --input_state_hover: #bdabd4;
+  --input_state_focus: #7643a0;
+  --input_state_error: #ffd1d1;
+  --input_state_normal: #a7a7a7;
 
   --width-Container: clamp(1px, 100%, 1200px);
 

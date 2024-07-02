@@ -6,9 +6,6 @@
   padding: var(--padding_10);
 }
 #LoginRegister .LoginRegister-Container {
-  border: 1px solid;
-  border-radius: var(--border_radius_6);
-  padding: var(--padding_20);
   display: flex;
   width: clamp(300px, 100%, 1000px);
 }
@@ -26,9 +23,12 @@
 #LoginRegister .LoginRegister-Container .Form-Container {
   width: clamp(300px, 100%, 768px);
   padding: var(--padding_20);
+  background-color: #fff;
+  border-radius: var(--border_radius_6);
 }
 #LoginRegister .LoginRegister-Container .Form-Container .Form-Title {
   margin-bottom: 10px;
+  height: 60px;
 }
 #LoginRegister .LoginRegister-Container .Form-Container .Form-Title h1 {
   font-family: var(--font_family_title);
@@ -39,9 +39,36 @@
   font-size: var(--font_size_16);
   margin-top: 3px;
 }
+#LoginRegister .LoginRegister-Container .Form-Container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 80px);
+}
+#LoginRegister .LoginRegister-Container .Form-Container form .Input-Container {
+  display: flex;
+  flex-direction: column;
+}
+#LoginRegister .LoginRegister-Container .Form-Container form .Input-Container .Link-Container {
+  margin-top: 5px;
+}
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
   #LoginRegister .LoginRegister-Container {
     flex-wrap: wrap;
+  }
+  #LoginRegister .LoginRegister-Container .Details-Container {
+    width: 100%;
+    aspect-ratio: 4/3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0px;
+  }
+  #LoginRegister .LoginRegister-Container .Form-Container {
+    width: 100%;
+    max-width: 570px;
+    margin: auto;
   }
 }/*# sourceMappingURL=LoginRegister.css.map */

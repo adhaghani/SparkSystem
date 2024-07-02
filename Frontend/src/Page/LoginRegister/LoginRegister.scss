@@ -5,9 +5,6 @@
   place-items: center;
   padding: var(--padding_10);
   .LoginRegister-Container {
-    border: 1px solid;
-    border-radius: var(--border_radius_6);
-    padding: var(--padding_20);
     display: flex;
     width: clamp(300px, 100%, 1000px);
     .Details-Container {
@@ -24,8 +21,11 @@
     .Form-Container {
       width: clamp(300px, 100%, 768px);
       padding: var(--padding_20);
+      background-color: #fff;
+      border-radius: var(--border_radius_6);
       .Form-Title {
         margin-bottom: 10px;
+        height: 60px;
         h1 {
           font-family: var(--font_family_title);
           letter-spacing: 1px;
@@ -36,6 +36,19 @@
           margin-top: 3px;
         }
       }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 80px);
+        .Input-Container {
+          display: flex;
+          flex-direction: column;
+          .Link-Container {
+            margin-top: 5px;
+          }
+        }
+      }
     }
   }
 }
@@ -44,6 +57,21 @@
   #LoginRegister {
     .LoginRegister-Container {
       flex-wrap: wrap;
+      .Details-Container {
+        width: 100%;
+        aspect-ratio: 4/3;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+        border-radius: 0px;
+      }
+      .Form-Container {
+        width: 100%;
+        max-width: 570px;
+        margin: auto;
+      }
     }
   }
 }
