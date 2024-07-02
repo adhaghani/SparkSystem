@@ -46,6 +46,9 @@
           flex-direction: column;
           .Link-Container {
             margin-top: 5px;
+            a {
+              color: var(--colour_primary_dark);
+            }
           }
         }
       }
