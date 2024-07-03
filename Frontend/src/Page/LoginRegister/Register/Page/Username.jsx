@@ -1,9 +1,12 @@
 import React from "react";
 
 import Input from "../../../../Component/Input/Input";
+import ErrorText from "../../../../Component/ErrorText/ErrorText";
 const Username = () => {
   return (
     <>
+      <ErrorText error={""} />
+
       <Input
         formSize="full"
         inputProps={{

@@ -1,9 +1,12 @@
 import React from "react";
 
 import Input from "../../../../Component/Input/Input";
+import ErrorText from "../../../../Component/ErrorText/ErrorText";
+
 const Personal = () => {
   return (
     <>
+      <ErrorText error={""} />
       <Input
         formSize="half"
         inputProps={{
@@ -32,7 +35,7 @@ const Personal = () => {
       <Input
         formSize="full"
         inputProps={{
-          type: "text",
+          type: "phone",
           name: "PhoneNumber",
           id: "PhoneNumber",
           label: "Phone Number",
@@ -46,7 +49,7 @@ const Personal = () => {
       <Input
         formSize="full"
         inputProps={{
-          type: "text",
+          type: "email",
           name: "EmailAddress",
           id: "EmailAddress",
           label: "Email Address",

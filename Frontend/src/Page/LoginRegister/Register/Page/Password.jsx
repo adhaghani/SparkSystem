@@ -1,13 +1,16 @@
 import React from "react";
 
 import Input from "../../../../Component/Input/Input";
+import ErrorText from "../../../../Component/ErrorText/ErrorText";
+
 const Password = () => {
   return (
     <>
+      <ErrorText error={""} />
       <Input
         formSize="full"
         inputProps={{
-          type: "text",
+          type: "password",
           name: "Password",
           id: "Password",
           label: "Password",
@@ -21,7 +24,7 @@ const Password = () => {
       <Input
         formSize="full"
         inputProps={{
-          type: "text",
+          type: "password",
           name: "ConfirmPassword",
           id: "ConfirmPassword",
           label: "Confirm Password",

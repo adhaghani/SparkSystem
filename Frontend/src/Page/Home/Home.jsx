@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Home.css";
 import Navigation from "../../Component/Navigation/Navigation";
@@ -9,6 +9,7 @@ import About from "./Sections/About/About";
 import Join from "./Sections/Join/Join";
 import Review from "./Sections/Review/Review";
 import FAQ from "./Sections/FAQ/FAQ";
+
 const Home = () => {
   return (
     <>

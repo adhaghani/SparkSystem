@@ -4,6 +4,7 @@ import "../LoginRegister.css";
 import FormTitle from "../Component/FormTitle";
 import Input from "../../../Component/Input/Input";
 import Button from "../../../Component/Button/Button";
+import ErrorText from "../../../Component/ErrorText/ErrorText";
 import { Link } from "react-router-dom";
 
 import image from "/LoginRegister/image.svg";
@@ -21,8 +22,11 @@ const Login = (props) => {
         </div>
         <div className="Form-Container">
           <FormTitle Title="Login" Details="Enter your credentials to login." />
+
           <form action="">
             <div className="Input-Container">
+              {/* TODO: ONLY IF ERROR ARE AVAILABLE */}
+              <ErrorText error={""} />
               <Input
                 formSize="full"
                 inputProps={{
@@ -56,14 +60,15 @@ const Login = (props) => {
                   New User? <Link to={"/Register"}>Register now</Link>
                 </p>
               </div>
-              <div className="Line-Container">
+              {/* TODO: ONLY IF UITM SSO ARE AVAILABLE */}
+              {/* <div className="Line-Container">
                 <div className="Line"></div>
                 <p className="Word">OR</p>
                 <div className="Line"></div>
               </div>
               <div className="UITM-SSO">
                 <Link to={"/"}>Sign in with UITM SSO</Link>
-              </div>
+              </div> */}
             </div>
             <div className="Button-Container">
               <Button
