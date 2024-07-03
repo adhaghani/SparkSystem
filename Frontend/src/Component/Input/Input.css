@@ -6,14 +6,18 @@
 }
 .form-container .Input {
   width: clamp(100px, 100%, 570px);
+  position: relative;
 }
 .form-container .Input label {
   transform: translateX(10px);
   font-size: var(--font_size_14);
   padding: 0px 4px;
-  background-color: white;
-  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
   color: var(--text_colour_lgray);
+  position: absolute;
+  top: 2px;
+  left: 0;
 }
 .form-container .Input label.error {
   color: var(--bg_colour_red);
@@ -25,7 +29,7 @@
 .form-container input {
   height: 55px;
   border-radius: 5px;
-  border: 2px solid var(--bg_colour_lgray);
+  border: 1px solid var(--bg_colour_lgray);
   font-size: var(--font_size_18);
   margin: 10px 0px;
   display: block;
@@ -36,18 +40,27 @@
 .form-container input::placeholder {
   color: var(--text_colour_lgray);
 }
-.form-container input.error {
-  border: 2px solid var(--bg_colour_lred);
-}
 .form-container input:hover {
-  border: 2px solid var(--input_state_hover);
+  border: 1px solid var(--input_state_hover);
+}
+.form-container input:hover ~ label {
+  color: var(--input_state_hover);
 }
 .form-container input:focus {
-  border: 2px solid var(--input_state_focus);
+  border: 1px solid var(--input_state_focus);
+}
+.form-container input:focus ~ label {
+  color: var(--input_state_focus);
 }
 .form-container input.error {
-  border: 2px solid var(--input_state_error);
+  border: 1px solid var(--input_state_error);
+}
+.form-container input.error ~ label {
+  color: var(--input_state_error);
 }
 .form-container.full input {
   width: clamp(250px, 100%, 570px);
+}
+.form-container.half {
+  gap: 10px;
 }/*# sourceMappingURL=Input.css.map */

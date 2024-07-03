@@ -5,13 +5,18 @@ import FormTitle from "../Component/FormTitle";
 import Input from "../../../Component/Input/Input";
 import Button from "../../../Component/Button/Button";
 import { Link } from "react-router-dom";
-const Login = () => {
+
+import image from "/LoginRegister/image.svg";
+const Login = (props) => {
   return (
     <div className="LoginRegistesr" id="LoginRegister">
       <div className="LoginRegister-Container">
         <div className="Details-Container">
           <div className="Title">
             <h1>SparkSystem</h1>
+          </div>
+          <div className="Image-Container">
+            <img src={image} alt="" />
           </div>
         </div>
         <div className="Form-Container">
@@ -26,7 +31,8 @@ const Login = () => {
                   id: "Username",
                   label: "Username",
                   placeholder: "Username",
-                  className: "input"
+                  className: "input",
+                  autoComplete: "off"
                   // value: Input.Username,
                   // onChange: handleChange
                 }}
@@ -39,7 +45,8 @@ const Login = () => {
                   id: "Password",
                   label: "Password",
                   placeholder: "password",
-                  className: "input"
+                  className: "input",
+                  autoComplete: "off"
                   // value: Input.Password,
                   // onChange: handleChange
                 }}
@@ -49,9 +56,21 @@ const Login = () => {
                   New User? <Link to={"/Register"}>Register now</Link>
                 </p>
               </div>
+              <div className="Line-Container">
+                <div className="Line"></div>
+                <p className="Word">OR</p>
+                <div className="Line"></div>
+              </div>
+              <div className="UITM-SSO">
+                <Link to={"/"}>Sign in with UITM SSO</Link>
+              </div>
             </div>
-            <div className="Button-Contianer">
-              <Button value="Login" className="Full Fill" link="/Dashboard" />
+            <div className="Button-Container">
+              <Button
+                value="Login"
+                className="Full Fill Primary"
+                link="/Dashboard"
+              />
             </div>
           </form>
         </div>

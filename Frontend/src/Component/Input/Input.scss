@@ -5,13 +5,17 @@
   max-width: 570px;
   .Input {
     width: clamp(100px, 100%, 570px);
+    position: relative;
     label {
       transform: translateX(10px);
       font-size: var(--font_size_14);
       padding: 0px 4px;
-      background-color: white;
-      position: absolute;
+      background-color: #fff;
+      border-radius: 4px;
       color: var(--text_colour_lgray);
+      position: absolute;
+      top: 2px;
+      left: 0;
       &.error {
         color: var(--bg_colour_red);
       }
@@ -24,29 +28,38 @@
   input {
     height: 55px;
     border-radius: 5px;
-    border: 2px solid var(--bg_colour_lgray);
+    border: 1px solid var(--bg_colour_lgray);
     font-size: var(--font_size_18);
     margin: 10px 0px;
     display: block;
     &::placeholder {
       color: var(--text_colour_lgray);
     }
-    &.error {
-      border: 2px solid var(--bg_colour_lred);
-    }
     &:hover {
-      border: 2px solid var(--input_state_hover);
+      border: 1px solid var(--input_state_hover);
+      ~ label {
+        color: var(--input_state_hover);
+      }
     }
     &:focus {
-      border: 2px solid var(--input_state_focus);
+      border: 1px solid var(--input_state_focus);
+      ~ label {
+        color: var(--input_state_focus);
+      }
     }
     &.error {
-      border: 2px solid var(--input_state_error);
+      border: 1px solid var(--input_state_error);
+      ~ label {
+        color: var(--input_state_error);
+      }
     }
   }
   &.full {
     input {
       width: clamp(250px, 100%, 570px);
     }
+  }
+  &.half {
+    gap: 10px;
   }
 }

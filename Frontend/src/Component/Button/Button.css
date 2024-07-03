@@ -16,11 +16,11 @@
 }
 .Button.outline {
   background-color: transparent;
-  border: 2px solid var(--text_colour_dkgray);
-  color: var(--text_colour_dkgray);
+  border: 2px solid var(--text_colour_black);
+  color: var(--text_colour_black);
 }
 .Button.outline:hover {
-  color: var(--text_colour_dkgray);
+  color: var(--text_colour_black);
   border: 2px solid var(--colour_primary_dark);
 }
 .Button.Full {
@@ -28,15 +28,9 @@
   margin-top: 20px;
 }
 .Button.Fill {
-  background-color: var(--colour_primary_light);
-  border: 2px solid var(--colour_primary);
+  color: var(--text_colour_white);
   font-weight: var(--font_weight_bold);
   max-width: 100%;
-}
-.Button.Fill:hover {
-  background-color: var(--colour_primary_dark);
-  border: 2px solid var(--colour_primary_dark);
-  color: var(--text_colour_white);
 }
 .Button.NoOutline {
   border: none;
@@ -51,6 +45,8 @@
 }
 .Button.Secondary {
   background-color: var(--colour_primary_light);
+  border: 2px solid var(--colour_primary_light);
+  color: var(--colour_primary_dark);
 }
 .Button.Secondary:hover {
   color: var(--colour_primary_dark);
