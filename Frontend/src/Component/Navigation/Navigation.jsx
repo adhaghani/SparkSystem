@@ -21,13 +21,13 @@ const Navigation = () => {
 
           <ul className="List">
             <li>
-              <Link to="/SparkSystem/Home">Home</Link>
+              <Link to="/Home">Home</Link>
             </li>
             <li>
-              <Link to="/SparkSystem/Home/About">About</Link>
+              <Link to="/Home/About-us">About</Link>
             </li>
             <li>
-              <Link to="/SparkSystem/Home/Parcel">Parcel</Link>
+              <Link to="/Home/Parcel">Parcel</Link>
             </li>
             {/* <li>
               <Link to="/Demo"> </Link>
@@ -36,11 +36,11 @@ const Navigation = () => {
         </div>
 
         <div className="Section Button">
-          <Button value="Log in" className="" link="/SparkSystem/Login" />
+          <Button value="Log in" className="" link="/Login" />
           <Button
             value="Sign Up for Free"
             className="Fill Primary"
-            link="/SparkSystem/Register"
+            link="/Register"
           />
         </div>
         <div className="Section Hamburger">
@@ -59,18 +59,18 @@ const Navigation = () => {
         <div className="Section">
           <ul className="List">
             <li>
-              <Link to="/SparkSystem/Home" onClick={handleSideNav}>
+              <Link to="/Home" onClick={handleSideNav}>
                 Home
               </Link>
             </li>
           </ul>
         </div>
         <div className="Section Button">
-          <Button value="Log in" className="Full" link="/SparkSystem/Login" />
+          <Button value="Log in" className="Full" link="/Login" />
           <Button
             value="Sign up for Free"
             className="Fill Primary"
-            link="/SparkSystem/Register"
+            link="/Register"
           />
         </div>
       </div>

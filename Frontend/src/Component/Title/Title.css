@@ -3,11 +3,12 @@
   text-align: center;
 }
 #Title h1 {
-  font-size: 48px;
+  font-size: var(--font_size_32);
   color: var(--colour_primary_dark);
   font-family: var(--font_family_title);
 }
 #Title h3 {
+  font-size: var(--font_size_18);
   margin-top: 10px;
   color: var(--text_colour_dkgray);
   font-weight: var(--font_weight_normal);

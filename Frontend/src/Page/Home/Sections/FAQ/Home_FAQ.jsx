@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./FAQ.css";
+import "./Home_FAQ.css";
 import Title from "../../../../Component/Title/Title";
 import FAQCard from "./Card/FAQCard";
 
 const FAQ = () => {
   return (
-    <div className="FAQ" id="FAQ">
+    <div className="FAQ Home_FAQ" id="FAQ">
       <Title
         title="Frequently Asked Question"
         subtitle="All the most frequent questions we have received."

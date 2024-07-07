@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./Join.css";
+import "./Home_Join.css";
 
 import Button from "../../../../Component/Button/Button";
 const Join = () => {
   return (
     <div className="Join" id="Join">
-      <div className="Container Join">
+      <div className="Container Home_Join">
         <div className="join-Card">
           <div className="Title">
             <h2>Create your account</h2>

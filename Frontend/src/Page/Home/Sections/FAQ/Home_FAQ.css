@@ -13,6 +13,7 @@
   justify-content: space-between;
   border: 2px solid var(--text_colour_white);
   border-radius: var(--border_radius_6);
+  background-color: var(--bg_colour_white);
   cursor: pointer;
 }
 #FAQ .Container.FAQ .FAQCard .Question-Container .Image-Container {
@@ -42,4 +43,4 @@
 }
 #FAQ .Container.FAQ .FAQCard .Answer-Container p {
   font-size: var(--font_size_18);
-}/*# sourceMappingURL=FAQ.css.map */
+}/*# sourceMappingURL=Home_FAQ.css.map */

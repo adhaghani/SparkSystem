@@ -7,7 +7,7 @@ import "./Hero.css";
 const Hero = (props) => {
   return (
     <div className="Hero" id="Hero">
-      <div className="Container Hero">
+      <div className="Container Home_Hero">
         <div className="Section Text">
           <h1>
             Your Parcel Tracker

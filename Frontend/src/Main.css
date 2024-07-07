@@ -16,7 +16,7 @@
 :root {
   --bg_colour_lred: #ff9696;
   --bg_colour_red: #fd1b1b;
-  --bg_colour_white: #f7f7f7;
+  --bg_colour_white: #ffffff;
   --bg_colour_black: #131313;
   --bg_colour_dkgray: #6d6d6d;
   --bg_colour_lgray: #cecece;
@@ -57,6 +57,9 @@
 
 body {
   background-color: #fff;
+  background-image: radial-gradient(#f1ecf8 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
 }
 
 .Container {

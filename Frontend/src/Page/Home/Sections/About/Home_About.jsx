@@ -2,7 +2,7 @@ import React from "react";
 
 import Title from "../../../../Component/Title/Title";
 import AboutSection from "./AboutSection/AboutSection";
-import "./About.css";
+import "./Home_About.css";
 
 import delivery from "/Home/About/delivery.svg";
 import location from "/Home/About/location.svg";
@@ -10,7 +10,7 @@ import security from "/Home/About/security.svg";
 const About = () => {
   return (
     <div className="About" id="About">
-      <div className="Container About">
+      <div className="Container Home_About">
         <div className="Section-Container">
           <AboutSection
             image={delivery}

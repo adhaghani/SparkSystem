@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import Title from "../../../../Component/Title/Title";
 
 import ReviewCard from "./ReviewCard/ReviewCard";
-import "./Review.css";
+import "./Home_Review.css";
 
 import Data from "./Data.json";
 
 const Review = () => {
   return (
-    <div className="Review" id="Review">
+    <div className="Review Home_Review" id="Review">
       <Title
         title="Our Review"
         subtitle="Listen to what our customer has to say."

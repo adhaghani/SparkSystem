@@ -9,10 +9,18 @@
 #About .Container .Section-Container #AboutSection:nth-child(even) {
   flex-direction: row-reverse;
 }
-#About .Container .Section-Container #AboutSection:nth-child(even) .illustration {
+#About
+  .Container
+  .Section-Container
+  #AboutSection:nth-child(even)
+  .illustration {
   justify-content: flex-end;
 }
-#About .Container .Section-Container #AboutSection:nth-child(even) .Section-Details {
+#About
+  .Container
+  .Section-Container
+  #AboutSection:nth-child(even)
+  .Section-Details {
   padding-right: 20px;
   padding-left: 0px;
 }
@@ -43,16 +51,34 @@
   font-size: var(--font_size_20);
   color: var(--text_colour_dkgray);
 }
-#About .Container .Section-Container #AboutSection .Section-Details .learn-more {
+#About
+  .Container
+  .Section-Container
+  #AboutSection
+  .Section-Details
+  .learn-more {
   margin-top: 12px;
   width: -moz-fit-content;
   width: fit-content;
 }
-#About .Container .Section-Container #AboutSection .Section-Details .learn-more a {
+#About
+  .Container
+  .Section-Container
+  #AboutSection
+  .Section-Details
+  .learn-more
+  a {
   color: var(--text_colour_black);
   font-size: var(--font_size_18);
 }
-#About .Container .Section-Container #AboutSection .Section-Details .learn-more a span {
+#About
+  .Container
+  .Section-Container
+  #AboutSection
+  .Section-Details
+  .learn-more
+  a
+  span {
   color: var(--colour_primary_dark);
 }
 
@@ -63,10 +89,18 @@
     text-align: center;
     gap: 60px;
   }
-  #About .Container .Section-Container #AboutSection:nth-child(even) .illustration {
+  #About
+    .Container
+    .Section-Container
+    #AboutSection:nth-child(even)
+    .illustration {
     justify-content: center;
   }
-  #About .Container .Section-Container #AboutSection:nth-child(even) .Section-Details {
+  #About
+    .Container
+    .Section-Container
+    #AboutSection:nth-child(even)
+    .Section-Details {
     padding: 0px 20px;
   }
   #About .Container .Section-Container #AboutSection .illustration {
@@ -78,8 +112,13 @@
   #About .Container .Section-Container #AboutSection .Section-Details {
     padding: 0px 20px;
   }
-  #About .Container .Section-Container #AboutSection .Section-Details .learn-more {
+  #About
+    .Container
+    .Section-Container
+    #AboutSection
+    .Section-Details
+    .learn-more {
     width: 100%;
     text-align: center;
   }
-}/*# sourceMappingURL=About.css.map */
+} /*# sourceMappingURL=Home_About.css.map */

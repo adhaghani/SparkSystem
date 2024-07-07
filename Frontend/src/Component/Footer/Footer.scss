@@ -1,32 +1,8 @@
 #Footer {
   background-color: var(--colour_primary_light);
-  .wrapper {
-    height: 150px;
-    transform: translateY(-150px);
-    position: relative;
-    z-index: -2;
-    background-color: var(--colour_primary_light);
-    .custom-shape-divider-top-1717848734 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-      transform: rotate(180deg);
-      svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 150px;
-      }
-      .shape-fill {
-        fill: #fff;
-      }
-    }
-  }
+
   .Container {
-    padding-bottom: 60px;
+    padding: 60px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
