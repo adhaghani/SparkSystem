@@ -1,0 +1,22 @@
+#NotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap_15);
+  height: 100vh;
+  background-color: var(--colour_primary_Light);
+}
+#NotFound img {
+  max-width: clamp(250px, 80%, 500px);
+}
+#NotFound h1 {
+  color: var(--colour_primary_dark);
+}
+#NotFound a {
+  background-color: var(--colour_primary_dark);
+  padding: 10px 20px;
+  color: var(--text_colour_white);
+  letter-spacing: 1px;
+  border-radius: 8px;
+}/*# sourceMappingURL=NotFound.css.map */

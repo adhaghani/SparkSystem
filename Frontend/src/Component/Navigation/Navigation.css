@@ -3,6 +3,7 @@
   height: var(--height_nav);
   background-color: var(--colour_primary_light);
   position: fixed;
+  z-index: 10;
 }
 #Navigation .Container {
   height: 100%;
@@ -21,10 +22,8 @@
   align-items: center;
   gap: 10px;
 }
-#Navigation .Container .Section .Logo img {
-  width: 40px;
-}
 #Navigation .Container .Section .Logo h3 {
+  color: var(--colour_primary_dark);
   letter-spacing: 1px;
 }
 #Navigation .Container .Section .List {
@@ -33,7 +32,8 @@
 #Navigation .Container .Section .List li a {
   display: block;
   padding: var(--padding_1020);
-  color: var(--text_colour_dkgray);
+  color: var(--text_colour_black);
+  font-weight: var(--font_weight_bold);
 }
 #Navigation .Container .Section .List li a:hover {
   color: var(--colour_primary_dark);

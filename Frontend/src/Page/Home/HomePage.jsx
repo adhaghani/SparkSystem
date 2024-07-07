@@ -1,8 +1,4 @@
-import React, { useEffect, useState } from "react";
-
-import "./Home.css";
-import Navigation from "../../Component/Navigation/Navigation";
-import Footer from "../../Component/Footer/Footer";
+import React from "react";
 
 import Hero from "./Sections/Hero/Hero";
 import About from "./Sections/About/About";
@@ -14,13 +10,11 @@ const Home = () => {
   return (
     <>
       <div className="Home" id="Home">
-        <Navigation />
         <Hero />
         <About />
         <Join />
         <Review />
         <FAQ />
-        <Footer />
       </div>
     </>
   );

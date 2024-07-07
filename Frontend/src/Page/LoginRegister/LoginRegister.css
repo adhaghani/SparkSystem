@@ -107,6 +107,7 @@
     padding: 0px;
   }
   #LoginRegister .LoginRegister-Container {
+    padding-top: var(--height_nav);
     flex-wrap: wrap;
     height: 100vh;
   }

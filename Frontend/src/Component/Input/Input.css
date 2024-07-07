@@ -7,6 +7,7 @@
 .form-container .Input {
   width: clamp(100px, 100%, 570px);
   position: relative;
+  z-index: 1;
 }
 .form-container .Input label {
   transform: translateX(10px);

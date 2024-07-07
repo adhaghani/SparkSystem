@@ -6,6 +6,7 @@
   .Input {
     width: clamp(100px, 100%, 570px);
     position: relative;
+    z-index: 1;
     label {
       transform: translateX(10px);
       font-size: var(--font_size_14);

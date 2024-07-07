@@ -4,7 +4,6 @@ import "./Navigation.css";
 
 import Button from "../Button/Button";
 
-import logo from "/Logo.svg";
 const Navigation = () => {
   const [SideNav, setSideNav] = useState(false);
 
@@ -17,13 +16,18 @@ const Navigation = () => {
       <div className="Container Navigation">
         <div className="Section">
           <div className="Logo">
-            <img src={logo} alt="" />
             <h3>SparkSystem</h3>
           </div>
 
           <ul className="List">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/SparkSystem/Home">Home</Link>
+            </li>
+            <li>
+              <Link to="/SparkSystem/Home/About">About</Link>
+            </li>
+            <li>
+              <Link to="/SparkSystem/Home/Parcel">Parcel</Link>
             </li>
             {/* <li>
               <Link to="/Demo"> </Link>
@@ -32,11 +36,11 @@ const Navigation = () => {
         </div>
 
         <div className="Section Button">
-          <Button value="Log in" className="" link="/Login" />
+          <Button value="Log in" className="" link="/SparkSystem/Login" />
           <Button
             value="Sign Up for Free"
             className="Fill Primary"
-            link="/Register"
+            link="/SparkSystem/Register"
           />
         </div>
         <div className="Section Hamburger">
@@ -55,18 +59,18 @@ const Navigation = () => {
         <div className="Section">
           <ul className="List">
             <li>
-              <Link to="/" onClick={handleSideNav}>
+              <Link to="/SparkSystem/Home" onClick={handleSideNav}>
                 Home
               </Link>
             </li>
           </ul>
         </div>
         <div className="Section Button">
-          <Button value="Log in" className="Full" link="/Login" />
+          <Button value="Log in" className="Full" link="/SparkSystem/Login" />
           <Button
             value="Sign up for Free"
             className="Fill Primary"
-            link="/Register"
+            link="/SparkSystem/Register"
           />
         </div>
       </div>

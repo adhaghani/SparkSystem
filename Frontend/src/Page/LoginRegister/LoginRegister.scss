@@ -7,6 +7,7 @@
   .LoginRegister-Container {
     display: flex;
     width: clamp(300px, 100%, 1000px);
+
     .Details-Container {
       aspect-ratio: 1/1;
       background-color: var(--colour_primary_light);
@@ -88,7 +89,7 @@
               background-color: var(--bg_colour_white);
               color: var(--text_colour_black);
             }
-          } 
+          }
         }
         .Button-Container {
           &.Register {
@@ -110,6 +111,7 @@
   #LoginRegister {
     padding: 0px;
     .LoginRegister-Container {
+      padding-top: var(--height_nav);
       flex-wrap: wrap;
       height: 100vh;
       .Details-Container {
