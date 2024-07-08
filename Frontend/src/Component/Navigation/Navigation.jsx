@@ -26,12 +26,6 @@ const Navigation = () => {
             <li>
               <Link to="/Home/About-us">About</Link>
             </li>
-            <li>
-              <Link to="/Home/Parcel">Parcel</Link>
-            </li>
-            {/* <li>
-              <Link to="/Demo"> </Link>
-            </li> */}
           </ul>
         </div>
 
@@ -61,6 +55,11 @@ const Navigation = () => {
             <li>
               <Link to="/Home" onClick={handleSideNav}>
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Home/About-us" onClick={handleSideNav}>
+                About
               </Link>
             </li>
           </ul>

@@ -1,13 +1,12 @@
 #LoginRegister {
-  height: 100vh;
   width: 100%;
   display: grid;
   place-items: center;
-  padding: var(--padding_10);
+  padding: var(--padding_20);
   .LoginRegister-Container {
     display: flex;
     width: clamp(300px, 100%, 1000px);
-
+    padding: calc(var(--height_nav) * 2) 0px;
     .Details-Container {
       aspect-ratio: 1/1;
       background-color: var(--colour_primary_light);
@@ -27,7 +26,6 @@
       width: clamp(300px, 100%, 768px);
       padding: var(--padding_20);
       padding-bottom: 0px;
-      background-color: #fff;
       border-radius: var(--border_radius_6);
       .Form-Title {
         margin-bottom: 20px;
@@ -87,7 +85,13 @@
               padding: 20px;
               border-radius: var(--border_radius_6);
               background-color: var(--bg_colour_white);
+              border: 2px solid var(--colour_primary_light);
               color: var(--text_colour_black);
+              font-weight: var(--font_weight_semibold);
+              &:hover {
+                background-color: var(--colour_primary_light);
+                border: 2px solid var(--colour_primary);
+              }
             }
           }
         }
@@ -113,7 +117,6 @@
     .LoginRegister-Container {
       padding-top: var(--height_nav);
       flex-wrap: wrap;
-      height: 100vh;
       .Details-Container {
         width: 100%;
         aspect-ratio: 16/9;

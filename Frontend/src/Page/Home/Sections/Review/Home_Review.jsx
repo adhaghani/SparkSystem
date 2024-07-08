@@ -16,8 +16,8 @@ const Review = () => {
       />
       <div className="Container Review">
         <div className="Section-Review">
-          {Data.map((item) => {
-            return <ReviewCard key={item.id} data={item} />;
+          {Data.map((item, id) => {
+            return <ReviewCard key={id} data={item} />;
           })}
         </div>
       </div>

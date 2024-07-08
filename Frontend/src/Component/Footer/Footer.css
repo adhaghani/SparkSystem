@@ -1,5 +1,8 @@
 #Footer {
   background-color: var(--colour_primary_light);
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  border-radius: 12px;
 }
 #Footer .Container {
   padding: 60px 0px;

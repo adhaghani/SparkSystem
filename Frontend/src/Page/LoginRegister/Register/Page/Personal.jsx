@@ -2,6 +2,7 @@ import React from "react";
 
 import Input from "../../../../Component/Input/Input";
 import ErrorText from "../../../../Component/ErrorText/ErrorText";
+import { Link } from "react-router-dom";
 
 const Personal = () => {
   return (
@@ -60,6 +61,12 @@ const Personal = () => {
           // onChange: handleChange
         }}
       />
+
+      <div className="Link-Container">
+        <p>
+          Already have an account? <Link to={"/Login"}>Login</Link>
+        </p>
+      </div>
     </>
   );
 };

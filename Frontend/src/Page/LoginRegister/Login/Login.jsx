@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 import "../LoginRegister.css";
 import FormTitle from "../Component/FormTitle";
 import Input from "../../../Component/Input/Input";
 import Button from "../../../Component/Button/Button";
 import ErrorText from "../../../Component/ErrorText/ErrorText";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import image from "/LoginRegister/image.svg";
 const Login = (props) => {
+  const [Error, setError] = useState("");
+
+  const Navigate = useNavigate();
+
+  const Username = useRef();
+  const Password = useRef();
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+
+    const payload = {
+      Username: Username.current.value,
+      Password: Password.current.value
+    };
+
+    Navigate("/Dashboard");
+  };
+
   return (
     <div className="LoginRegistesr" id="LoginRegister">
       <div className="LoginRegister-Container">
@@ -26,10 +44,11 @@ const Login = (props) => {
           <form action="">
             <div className="Input-Container">
               {/* TODO: ONLY IF ERROR ARE AVAILABLE */}
-              <ErrorText error={""} />
+              <ErrorText error={Error} />
               <Input
                 formSize="full"
                 inputProps={{
+                  ref: Username,
                   type: "text",
                   name: "Username",
                   id: "Username",
@@ -37,13 +56,12 @@ const Login = (props) => {
                   placeholder: "Username",
                   className: "input",
                   autoComplete: "off"
-                  // value: Input.Username,
-                  // onChange: handleChange
                 }}
               />
               <Input
                 formSize="full"
                 inputProps={{
+                  ref: Password,
                   type: "password",
                   name: "Password",
                   id: "Password",
@@ -51,8 +69,6 @@ const Login = (props) => {
                   placeholder: "password",
                   className: "input",
                   autoComplete: "off"
-                  // value: Input.Password,
-                  // onChange: handleChange
                 }}
               />
               <div className="Link-Container">
@@ -72,9 +88,11 @@ const Login = (props) => {
             </div>
             <div className="Button-Container">
               <Button
+                isButton={true}
                 value="Login"
                 className="Full Fill Primary"
-                link="/Dashboard"
+                // link="/Dashboard"
+                onClick={handleLogin}
               />
             </div>
           </form>

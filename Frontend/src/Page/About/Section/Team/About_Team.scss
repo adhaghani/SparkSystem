@@ -1,17 +1,12 @@
 #About_Team {
+  padding: 50px 0px;
   .Container {
     .Team-Section {
-      .Section-Title {
-        margin: 50px 0px;
-        h1 {
-          text-align: center;
-          color: var(--colour_primary_dark);
-        }
-      }
       .Section-Container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: var(--gap_15);
+        margin-top: 30px;
         #teamCard {
           padding: var(--padding_20);
           border-radius: var(--border_radius_6);
@@ -33,6 +28,30 @@
               font-weight: var(--font_weight_semibold);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  #About_Team {
+    .Container {
+      .Team-Section {
+        .Section-Container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 424px) {
+  #About_Team {
+    .Container {
+      .Team-Section {
+        .Section-Container {
+          grid-template-columns: 1fr;
         }
       }
     }

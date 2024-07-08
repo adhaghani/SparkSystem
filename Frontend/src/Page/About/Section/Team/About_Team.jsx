@@ -9,11 +9,14 @@ const About_Team = () => {
     <div className="About_Team" id="About_Team">
       <Title title="Our Team" subtitle="Meet the team." />
       <div className="Container">
-        <div className="Team-Section Executive">
-          <div className="Section-Title">
-            <h1>Executive</h1>
-          </div>
+        <div className="Team-Section">
           <div className="Section-Container">
+            <TeamCard />
+            <TeamCard />
+            <TeamCard />
+            <TeamCard />
+            <TeamCard />
+            <TeamCard />
             <TeamCard />
             <TeamCard />
             <TeamCard />

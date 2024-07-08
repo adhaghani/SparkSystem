@@ -6,9 +6,10 @@ import Guest from "./Layout/Guest";
 import Login from "./Page/LoginRegister/Login/Login";
 import Register from "./Page/LoginRegister/Register/Register";
 import NotFound from "./Page/NotFound/NotFoundPage";
-import ParcelPage from "./Page/Parcel/ParcelPage";
 import AboutPage from "./Page/About/AboutPage";
+
 import Default from "./Layout/Default";
+import Dashboard from "./Page/Dashboard/Dashboard";
 
 const routes = [
   {
@@ -34,10 +35,20 @@ const routes = [
       {
         path: "/Home/About-us",
         element: <AboutPage />
+      }
+    ]
+  },
+  {
+    path: "/",
+    element: <Default />,
+    children: [
+      {
+        path: "/",
+        element: <Navigate to="/Dashboard" />
       },
       {
-        path: "/Home/Parcel",
-        element: <ParcelPage />
+        path: "/Dashboard",
+        element: <Dashboard />
       }
     ]
   },
