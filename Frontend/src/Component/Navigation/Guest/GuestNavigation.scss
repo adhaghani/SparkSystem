@@ -1,4 +1,4 @@
-#Navigation {
+#GuestNavigation {
   width: 100%;
   height: var(--height_nav);
   background-color: var(--bg_colour_white);
@@ -113,7 +113,7 @@
 }
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
-  #Navigation {
+  #GuestNavigation {
     position: fixed;
     .Container {
       .Section {

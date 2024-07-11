@@ -14,7 +14,7 @@ const Personal = () => {
           type: "text",
           name: "FirstName",
           id: "FirstName",
-          label: "First Name",
+          label: "First Name",  
           placeholder: "First Name",
           className: "input",
           autoComplete: "off"

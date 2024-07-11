@@ -60,7 +60,8 @@
   min-height: 225px;
 }
 #LoginRegister .LoginRegister-Container .Form-Container form .Input-Container .Link-Container {
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 #LoginRegister .LoginRegister-Container .Form-Container form .Input-Container .Link-Container span {
   color: var(--colour_primary_dark);

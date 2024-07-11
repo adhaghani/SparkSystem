@@ -1,0 +1,44 @@
+#DefaultNavigation {
+  background-color: var(--bg_colour_white);
+  height: 60px;
+  box-shadow: var(--box_shadow_1);
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+#DefaultNavigation .Container-Top {
+  width: var(--width-Container-4K);
+  margin: auto;
+  height: 100%;
+  padding: var(--padding_020);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#DefaultNavigation .Container-Top .Section.Logo .Logo {
+  color: var(--colour_primary_dark);
+  letter-spacing: 1px;
+}
+#DefaultNavigation .Container-Top .Section.Action {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#DefaultNavigation .Container-Top .Section.Action .Card {
+  border-radius: var(--border_radius_6);
+}
+#DefaultNavigation .Container-Top .Section.Action .Card .image .Option {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+#DefaultNavigation .Container-Side {
+  background-color: var(--colour_primary_light);
+  padding: 20px;
+  width: 200px;
+  height: calc(100vh - 60px);
+}/*# sourceMappingURL=DefaultNavigation.css.map */

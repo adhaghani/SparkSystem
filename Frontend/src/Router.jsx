@@ -11,6 +11,12 @@ import AboutPage from "./Page/About/AboutPage";
 import Default from "./Layout/Default";
 import Dashboard from "./Page/Dashboard/Dashboard";
 
+import Staff from "./Page/Dashboard/UserType/Staff/Staff";
+import Admin from "./Page/Dashboard/UserType/Admin/Admin";
+import User from "./Page/Dashboard/UserType/User/User";
+import Setting from "./Page/Dashboard/Pages/Setting/Setting";
+import Profile from "./Page/Dashboard/Pages/Profile/Profile";
+
 const routes = [
   {
     path: "/",
@@ -48,7 +54,33 @@ const routes = [
       },
       {
         path: "/Dashboard",
-        element: <Dashboard />
+        element: <Dashboard />,
+        children: [
+          {
+            path: "/Dashboard",
+            element: <Navigate to="/Dashboard/Profile" />
+          },
+          {
+            path: "/Dashboard/Admin",
+            element: <Admin />
+          },
+          {
+            path: "/Dashboard/Staff",
+            element: <Staff />
+          },
+          {
+            path: "/Dashboard/Profile",
+            element: <Profile />
+          },
+          {
+            path: "/Dashboard/Setting",
+            element: <Setting />
+          },
+          {
+            path: "/Dashboard/Profile",
+            element: <Profile />
+          }
+        ]
       }
     ]
   },

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate, Outlet } from "react-router-dom";
-import Navigation from "../Component/Navigation/Navigation";
+import GuestNavigation from "../Component/Navigation/Guest/GuestNavigation";
 import Footer from "../Component/Footer/Footer";
 import { useStateContext } from "../Component/ContextProvider/ContextProvider";
 const Guest = () => {
@@ -12,7 +12,7 @@ const Guest = () => {
 
   return (
     <>
-      <Navigation />
+      <GuestNavigation />
       <Outlet />
       <Footer />
     </>

@@ -17,6 +17,7 @@
   --bg_colour_lred: #ff9696;
   --bg_colour_red: #fd1b1b;
   --bg_colour_white: #ffffff;
+  --bg_colour_offwhite: #f8f8f8;
   --bg_colour_black: #131313;
   --bg_colour_dkgray: #6d6d6d;
   --bg_colour_lgray: #cecece;
@@ -29,6 +30,7 @@
   --input_state_error: #ffd1d1;
   --input_state_normal: #a7a7a7;
   --width-Container: clamp(1px, 100%, 1200px);
+  --width-Container-4K: clamp(1px, 100%, 1920px);
   --padding_1020: 10px 20px;
   --padding_020: 0 20px;
   --padding_20: 20px;
@@ -82,4 +84,9 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px none inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.Layout-Container {
+  padding-top: 60px;
+  padding-left: 200px;
 }/*# sourceMappingURL=Main.css.map */

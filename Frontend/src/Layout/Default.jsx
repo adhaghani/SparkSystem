@@ -2,6 +2,8 @@ import React from "react";
 
 import { Navigate, Outlet } from "react-router-dom";
 import { useStateContext } from "../Component/ContextProvider/ContextProvider";
+
+import DefaultNavigation from "../Component/Navigation/Default/DefaultNavigation";
 const Default = () => {
   const { token } = useStateContext();
 
@@ -11,8 +13,10 @@ const Default = () => {
 
   return (
     <>
-      Default Dashboard Layout
-      <Outlet />
+      <DefaultNavigation />
+      <div className="Layout-Container Default">
+        <Outlet />
+      </div>
     </>
   );
 };

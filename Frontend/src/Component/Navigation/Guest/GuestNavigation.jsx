@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navigation.css";
+import "./GuestNavigation.css";
 
-import Button from "../Button/Button";
+import Button from "../../Button/Button";
 
-const Navigation = () => {
+const GuestNavigation = () => {
   const [SideNav, setSideNav] = useState(false);
 
   const handleSideNav = () => {
@@ -12,7 +12,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="Navigation" id="Navigation">
+    <div className="GuestNavigation" id="GuestNavigation">
       <div className="Container Navigation">
         <div className="Section">
           <div className="Logo">
@@ -65,11 +65,17 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="Section Button">
-          <Button value="Log in" className="Full" link="/Login" />
+          <Button
+            value="Log in"
+            className="Full"
+            link="/Login"
+            onClick={handleSideNav}
+          />
           <Button
             value="Sign up for Free"
             className="Fill Primary"
             link="/Register"
+            onClick={handleSideNav}
           />
         </div>
       </div>
@@ -77,4 +83,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default GuestNavigation;

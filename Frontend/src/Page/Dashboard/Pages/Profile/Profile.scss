@@ -1,0 +1,44 @@
+#ProfileDashboard {
+  .Profile-Card {
+    background-color: var(--bg_colour_white);
+    padding: var(--padding_20);
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    .Title-Container {
+      width: 40%;
+      padding: var(--padding_20);
+      .Title {
+        color: var(--text_colour_black);
+      }
+      .Sub-Title {
+        font-size: var(--font_size_14);
+        color: var(--text_colour_dkgray);
+        margin-top: 10px;
+      }
+    }
+    .Update-Container {
+      width: 60%;
+      display: flex;
+      box-shadow: var(--box_shadow_1);
+      border-radius: var(--border_radius_6);
+      flex-direction: column;
+      padding: var(--padding_20);
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #ProfileDashboard {
+    .Profile-Card {
+      flex-direction: column;
+      .Title-Container {
+        width: 100%;
+      }
+      .Update-Container {
+        width: 100%;
+      }
+    }
+  }
+}
