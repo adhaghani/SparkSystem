@@ -137,12 +137,18 @@
         max-width: 570px;
         margin: 0px auto;
         padding-bottom: 20px;
+
         .Form-Title {
           margin-bottom: 5px;
         }
         form {
           .Button-Container.Register {
             gap: 10px;
+          }
+          .Input-Container {
+            &.Register {
+              min-height: 271px;
+            }
           }
         }
       }

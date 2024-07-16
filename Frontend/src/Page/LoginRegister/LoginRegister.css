@@ -139,4 +139,7 @@
   #LoginRegister .LoginRegister-Container .Form-Container form .Button-Container.Register {
     gap: 10px;
   }
+  #LoginRegister .LoginRegister-Container .Form-Container form .Input-Container.Register {
+    min-height: 271px;
+  }
 }/*# sourceMappingURL=LoginRegister.css.map */

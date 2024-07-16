@@ -7,7 +7,8 @@ import Button from "../../Button/Button";
 const GuestNavigation = () => {
   const [SideNav, setSideNav] = useState(false);
 
-  const handleSideNav = () => {
+  const handleSideNav = (e) => {
+    e.preventDefault();
     setSideNav(!SideNav);
   };
 

@@ -61,7 +61,7 @@ const Register = () => {
             />
           )}
           <form action="">
-            <div className="Input-Container">
+            <div className="Input-Container Register">
               {CurrentPage === 1 && <Personal />}
               {CurrentPage === 2 && <Password />}
               {CurrentPage === 3 && <Username />}
